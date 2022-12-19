@@ -1,9 +1,9 @@
 # Project: molecular-markers-on-sports
 
-## Thesis Title
+## Thesis title
 Identificação de marcadores moleculares para a performance esportiva (*Identification of molecular markers for sports performance*)
 
-## Thesis Abstract
+## Thesis abstract
 A identificação de marcadores moleculares para a performance esportiva...
 
 ## Authors and contributors
