@@ -35,7 +35,7 @@ if [ "${REVERSE: -3}" == ".gz" ]; then
 	REVERSE="${REVERSE:: -3}"
 fi
 
-FASTQC_REPORTS_PATH="/mnt/nupeb/molecular-markers-on-sports/reports/fastqc"
+#FASTQC_REPORTS_PATH="/mnt/nupeb/molecular-markers-on-sports/reports/fastqc"
 # Iterate over each file
 FASTQ_RAW=($FORWARD $REVERSE)
 for f in "${FASTQ_RAW[@]}"; do
