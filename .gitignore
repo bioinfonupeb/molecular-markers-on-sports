@@ -145,4 +145,5 @@ data/interim/
 *.bcf
 *.vcf
 *.vcf.gz
-
+*.gz
+*.zip
