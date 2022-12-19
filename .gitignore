@@ -127,3 +127,18 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Custom
+data/
+data/raw-data/
+.idea/
+*.qza
+*.fastq
+*.fastq.gz
+*.fasta
+*.sam
+*.bam
+*.fna
+*.bam
+*.bcf
+*.vcf
