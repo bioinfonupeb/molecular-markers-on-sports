@@ -1,4 +1,4 @@
-<h1 align="center">Metagenomics analysis and processing pipeline</h1>
+<h1 align="center">Variant analysis and processing pipeline</h1>
 <p align="center"><strong>"Identificação de marcadores moleculares para a performance esportiva"</strong>
 <p align="center"><strong><i style="color:gray;">"Identification of molecular markers for sports performance"</i></strong>
 <br/>
