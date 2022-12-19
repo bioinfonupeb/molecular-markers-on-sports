@@ -116,25 +116,25 @@ for f in "${FASTQ_RAW[@]}"; do
 		${CMD_FASTQC} "${OUT_GOOD_PATH}.fastq" --outdir ${FASTQC_REPORTS_PATH} --threads 20
 	fi
 
-	# ############################################ #
-	# STEP 03 - Align reads to reference : Bowtie2 #
-	# ############################################ #
+	# # ############################################ #
+	# # STEP 03 - Align reads to reference : Bowtie2 #
+	# # ############################################ #
 
-	# - Define namespace for bowtie2 sequence aligner
-	REFBASE="GCF_000001405.40_GRCh38.p14_genomic_index_base"
-	REFERENCE="${RAW_PATH}/reference/${REFBASE}"
+	# # - Define namespace for bowtie2 sequence aligner
+	# REFBASE="GCF_000001405.40_GRCh38.p14_genomic_index_base"
+	# REFERENCE="${RAW_PATH}/reference/${REFBASE}"
 
-	# Build reference: Already build
-	# TODO: Verify to build
-	# TODO: Test build
-	#bowtie2-build -f /home/esther_verlane_lbcm/identifyofmolecularmarkes-project/reference/GCF_000001405.40_GRCh38.p14_genomic.fna GCF_reference_index_base
+	# # Build reference: Already build
+	# # TODO: Verify to build
+	# # TODO: Test build
+	# #bowtie2-build -f /home/esther_verlane_lbcm/identifyofmolecularmarkes-project/reference/GCF_000001405.40_GRCh38.p14_genomic.fna GCF_reference_index_base
 
-	# Align reads
-	bowtie2 --very-sensitive 
-			-x ${REFERENCE}
-			-1 ~/identifyofmolecularmarkes-project/reads/filtered/OMNI-22-MV_S2_L001_R1_Q30_35.fastq 
-			-2 ~/identifyofmolecularmarkes-project/reads/filtered/OMNI-22-MV_S2_L001_R2_Q30_35.fastq 
-			-S OMNI-22-MV_S2_L001_bowtie2.sam
+	# # Align reads
+	# bowtie2 --very-sensitive 
+	# 		-x ${REFERENCE}
+	# 		-1 ~/identifyofmolecularmarkes-project/reads/filtered/OMNI-22-MV_S2_L001_R1_Q30_35.fastq 
+	# 		-2 ~/identifyofmolecularmarkes-project/reads/filtered/OMNI-22-MV_S2_L001_R2_Q30_35.fastq 
+	# 		-S OMNI-22-MV_S2_L001_bowtie2.sam
 
 
 
