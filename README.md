@@ -1,6 +1,6 @@
 <h1 align="center">Metagenomics analysis and processing pipeline</h1>
 <p align="center"><strong>"Identificação de marcadores moleculares para a performance esportiva"</strong>
-<p align="center"><strong><italic>"Identification of molecular markers for sports performance"</italic></strong>
+<p align="center"><strong><italic style="color:gray;">"Identification of molecular markers for sports performance"</italic></strong>
 <br/>
   
 <h2>Contributors</h2>
