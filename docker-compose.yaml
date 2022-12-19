@@ -1,0 +1,10 @@
+version: "2.12.2"
+services:
+  fastqc:
+    image: biocontainers/fastqc:v0.11.9_cv8
+    container_name: fastqc-container
+  prinseq:
+    image: dceoy/prinseq
+    container_name: prinseq-container
+
+

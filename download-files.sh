@@ -1,19 +1,9 @@
 FILENAMES=(
-OMNI-21-LSS_S1_L002_R1_001.fastq.gz
-OMNI-21-LSS_S1_L002_R2_001.fastq.gz 
-OMNI-21-LSS_S1_L003_R1_001.fastq.gz 
-OMNI-21-LSS_S1_L003_R2_001.fastq.gz 
-OMNI-21-LSS_S1_L004_R1_001.fastq.gz 
-OMNI-21-LSS_S1_L004_R2_001.fastq.gz 
+OMNI-22-MV_S2_L002_R2_001.fastq.gz
 )
 
 FILEURLS=(
-"https://drive.google.com/file/d/1wSa04PEYe_SNjjKP3SYeQhwQJGLHDzyI/view?usp=sharing"
-"https://drive.google.com/file/d/1ivD7B4GdFQlwlC2XoyhvAChyoIrMuiqE/view?usp=sharing"
-"https://drive.google.com/file/d/1ukKTZ8Yz6K_y8DOmiGfb8oEz9jFtJk6o/view?usp=sharing"
-"https://drive.google.com/file/d/1_d0Y7CMZBFQWfpEH4xTpJfhcafw61Xdb/view?usp=sharing"
-"https://drive.google.com/file/d/1MFqdKFxR_bTuHZiIBuBUxN7xQ3QEc4Pq/view?usp=sharing"
-"https://drive.google.com/file/d/1bnT5Wrn7ubPqbJOm3fYLD3y_5KMRwYIx/view?usp=sharing"
+"https://drive.google.com/file/d/1he__euBsD7Y-eMCVAfXZxLBxmuPkxbwW/view?usp=sharing"
 )
 
 for i in ${!FILENAMES[@]}; do
@@ -25,7 +15,8 @@ for i in ${!FILENAMES[@]}; do
 	echo "Downloading file ${FILENAME} with ID ${FILEID}";
 
 	# Download a large file
-	wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=${FILEID}' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=${FILEID}" -O ${FILENAME} && rm -rf /tmp/cookies.txt
+	wget --wait 10 --random-wait --continue --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=${FILEID}' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=${FILEID}&key=AIzaSyD9AGm-E41y57R-VBh_LOFVgZ-4pD9AK1g" -O ${FILENAME} && rm -rf /tmp/cookies.txt
+	gzip -d ${FILENAME}
 
 done
 

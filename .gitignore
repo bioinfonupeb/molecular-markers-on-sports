@@ -130,7 +130,8 @@ dmypy.json
 
 # Custom
 data/
-data/raw-data/
+data/raw/
+data/interim/
 .idea/
 *.qza
 *.fastq
