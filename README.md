@@ -10,8 +10,8 @@
   <li>Izinara Rosse da Cruz <a href="#projectManagement-izinara-cruz" title="Project Management">📆</a> <a href="#ideas-izinara-cruz" title="Ideas & Planning">🤔</a> <a href="#fundingFinding-izinara-cruz" title="Funding/Grant Finders">🔍</a> - Lattes: http://lattes.cnpq.br/4671130343607854</li>
 </ul>
 
-<h2>Project abstract</h2>
-...
+<h2>Abstract</h2>
+Sports performance is characterized as a multifactorial phenotype, that is, it is a characteristic influenced by environmental and genetic factors. The objective of this project is to identify molecular markers that affect sports performance in soccer players. For this, the complete genomes of 45 male athletes from a club in the first division of Brazilian football were sequenced. These athletes will undergo physical testicles to assess strength, speed and endurance and will be grouped by profiles. The sequences from the sequencing of the genomes will be kept in a bioinformatics pipeline to carry out the identification of genetic variants along the genomes. Quality and statistical analyzes will be carried out in order to verify if there is an association between the identified variants and the sports performance of the athletes. Once the association is confirmed, these variants may be used as molecular markers for sports performance.
 
 <h2>Project status</h2>
 Under development.
